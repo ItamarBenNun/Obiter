@@ -14,25 +14,33 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #DCDCDC;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #031E55;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header h1 {
+  font-size: 5rem;
+  margin-bottom: 10vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pageButtons {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+
+.pageButtons img {
+  height: 50px;
+  width: 50px;
+  transition: all 0.5s ease;
+  transform: scale(1);
+}
+
+.pageButtons img:hover {
+  transform: scale(1.5) perspective(1px);
 }
